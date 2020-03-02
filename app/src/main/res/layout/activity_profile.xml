@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="logout"
+        android:text="Logout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+       />
+
+    <TextView
+        android:id="@+id/textHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Profile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="112dp"
+        android:layout_height="134dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/textHead"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/TXT_full_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="Your Name"
+        android:layout_below="@+id/textHead"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/imageView"
+   />
+
+    <TextView
+        android:id="@+id/TXT_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="Your Email Address"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_below="@+id/TXT_full_name"
+       />
+
+    <TextView
+        android:id="@+id/TXT_phone_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="Your Phone"
+        android:layout_below="@+id/TXT_email"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/imageView"
+        />
+
+
+    <TextView
+        android:id="@+id/TXT_identity_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="Your identity"
+        android:layout_below="@+id/TXT_phone_number"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/imageView"
+        />
+    <TextView
+        android:id="@+id/TXT_academy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="Your academy"
+        android:layout_below="@+id/TXT_identity_number"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/imageView"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/TXT_start_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="Your start year"
+        android:layout_below="@+id/TXT_academy"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/imageView"
+        />
+    <TextView
+        android:id="@+id/TXT_engineering"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="Your engineering"
+        android:layout_below="@+id/TXT_start_year"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/imageView"
+        />
+
+
+
+</RelativeLayout>

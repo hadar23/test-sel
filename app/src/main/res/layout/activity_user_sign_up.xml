@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSignUpActivity">
+
+    <ImageView
+        android:id="@+id/IMG_signup_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/img_sign_up">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/EDT_full_nameET"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:background="@drawable/rounded_edit_txt"
+        android:layout_below="@+id/IMG_signup_img"
+        android:hint="full name"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <EditText
+        android:id="@+id/EDT_identity_numberET"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:background="@drawable/rounded_edit_txt"
+        android:layout_below="@+id/EDT_full_nameET"
+        android:hint="identity number"
+        android:inputType="numberPassword"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/EDT_phone_numberET"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:background="@drawable/rounded_edit_txt"
+        android:layout_below="@+id/EDT_identity_numberET"
+        android:hint="phone number"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+
+    <EditText
+        android:id="@+id/EDT_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:background="@drawable/rounded_edit_txt"
+        android:layout_below="@+id/EDT_phone_numberET"
+        android:hint="email"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/EDT_academy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:background="@drawable/rounded_edit_txt"
+        android:layout_below="@+id/EDT_email"
+        android:hint="academy"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/EDT_start_year"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:background="@drawable/rounded_edit_txt"
+        android:layout_below="@+id/EDT_academy"
+        android:hint="start year"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="20dp"
+        android:inputType="date" />
+
+
+    <EditText
+        android:id="@+id/EDT_engineering"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:background="@drawable/rounded_edit_txt"
+        android:layout_below="@+id/EDT_start_year"
+        android:hint="engineering"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="textAutoCorrect" />
+
+    <Button
+        android:id="@+id/BTNsign_up"
+        android:layout_below="@+id/EDT_engineering"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#F9E3FD"
+        android:textColor="#9C27B0"
+        android:elevation="5dp"
+        android:text="sign up"
+        android:background="@drawable/rounded_edit_txt"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/TXT_quest"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="already register ? Login here"
+        android:layout_below="@+id/BTNsign_up"
+        android:layout_marginTop="15dp"
+        android:textColor="#9C27B0"
+        android:textStyle="bold"
+
+        >
+
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/pbarReg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+ >
+
+    </ProgressBar>
+
+
+</RelativeLayout>

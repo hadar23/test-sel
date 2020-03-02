@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="15dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/ic_Icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_logo" />
+
+    <ImageView
+        android:id="@+id/IMG_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_Icon"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/img_headline" />
+
+    <TextView
+        android:id="@+id/TXT_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IMG_headline"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#F0EFEF"
+        android:gravity="center"
+        android:background="@drawable/rounded_edit_txt"
+        android:text="LOGIN"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TXT_login"
+
+        />
+
+
+    <EditText
+        android:id="@+id/EDT_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ccp"
+        android:hint="phone"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/EDT_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EDT_user_name"
+        android:hint="verification number"
+        android:inputType="textVisiblePassword" />
+
+    <FrameLayout
+        android:id="@+id/Frame-bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EDT_password"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/BTN_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_gravity="left"
+            android:background="@drawable/rounded_edit_txt"
+            android:text="sign up"
+            android:backgroundTint="#F9E3FD"
+            android:textColor="#9C27B0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/BTN_forgot_password"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/rounded_edit_txt"
+
+            android:padding="10dp"
+            android:text="forgot password"
+            android:backgroundTint="#F9E3FD"
+            android:textColor="#9C27B0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/BTN_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_edit_txt"
+            android:padding="10dp"
+            android:text="sign in"
+
+            android:backgroundTint="#F9E3FD"
+            android:textColor="#9C27B0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/pbarLog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+
+        >
+
+    </ProgressBar>
+
+</RelativeLayout>
